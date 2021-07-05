@@ -1,6 +1,6 @@
 # Creating and Publishing Active Learning Handouts
 
-(texto de introdução do worksho)
+(texto de introdução do workshop)
 
 (jabá do insper)
 
