@@ -1,0 +1,46 @@
+site_name: Interactive Handout
+
+theme:
+  feature:
+    tabs: true
+  name: material
+
+docs_dir: content
+site_dir: docs
+
+site_url: https://insper-education.github.io/interactive-handout/
+repo_name: "Interactive Handout"
+repo_url: https://github.com/insper-education/interactive-handout
+edit_uri: edit/main/content/
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
+  - js/markdown-enhancer.js
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - attr_list
+
+plugins: 
+  - git-revision-date-localized
+
+
+
+nav:
+  - Home: index.md
