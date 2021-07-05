@@ -1,4 +1,4 @@
-site_name: Interactive Handout
+site_name: Workshop PAEE/ALE 21
 
 theme:
   feature:
@@ -8,9 +8,9 @@ theme:
 docs_dir: content
 site_dir: docs
 
-site_url: https://insper-education.github.io/interactive-handout/
-repo_name: "Interactive Handout"
-repo_url: https://github.com/insper-education/interactive-handout
+site_url: https://insper-education.github.io/workshop-paee-ale-21/
+repo_name: "Workshop PAEE/ALE 21"
+repo_url: https://github.com/insper-education/workshop-paee-ale-21
 edit_uri: edit/main/content/
 
 extra_javascript:
@@ -44,3 +44,6 @@ plugins:
 
 nav:
   - Home: index.md
+  - 00-preliminary-tasks/index.md
+  - 01-basic-editing-publishing/index.md
+  - 02-interactive-content/index.md
