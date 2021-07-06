@@ -45,4 +45,4 @@ plugins:
 nav:
   - Home: index.md
   - 00-preliminary-tasks/index.md
-  - 01-basic-editing-publishing/index.md
+  - 01-basic-first-page/index.md
