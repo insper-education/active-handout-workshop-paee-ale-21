@@ -7,6 +7,6 @@ Welcome to "Creating and Publishing Active Learning Handouts" Workshop - PAEE/AL
     * Rafael Corsi Ferrão
     * Andrew Kurauchi
 * **Date**: July 8th 11:30 - 13:00 (Europe/Lisbon GMT+1)
-* **Where?**: Online at https://paeeale-2021.eventqualia.net/
+* **Where?** Online at https://paeeale-2021.eventqualia.net/
 
-The original Workshop proposal paper is available [here](workshop-paper.pdf). 
+The original workshop proposal paper is available [here](workshop-paper.pdf). 

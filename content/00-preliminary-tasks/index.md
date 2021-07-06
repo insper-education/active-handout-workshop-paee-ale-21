@@ -1,6 +1,6 @@
 # Preparatory tasks
 
-Welcome to "Creating and Publishing Active Learning Handouts". This set of preparatory tasks was created to avoid spending precious synchronous time with tasks like creating accounts or configuring software. 
+This set of preparatory tasks was created to avoid spending precious synchronous time with tasks like creating accounts or configuring software. You should need about **20 minutes** to complete all tasks. We do not assume any previous knowledge on the technologies involved, so it is possible to complete the material in much less time.
 
 ## Task 1 - visit some resources
 
@@ -10,7 +10,6 @@ The first step is to become familiar with the type of course materials that can 
     * [Introduction to Paralelism](https://insper.github.io/supercomp/aulas/12-paralelismo/)
     * [Schedule](https://insper.github.io/supercomp/sobre/)
     * [Report rubric](https://insper.github.io/supercomp/projetos/relatorio-2/)
-* TODO: elementos ou embarcados vem aqui
 
 !!! question short
     Browse the resources above. Are there feature(s) you would like to incorporate in your pedagogical practice? List them below.
