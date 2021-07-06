@@ -34,7 +34,7 @@ GitHub is a tool to host software repositories and documentation with a focus on
 !!! warning "If you already have an account, skip to task 3"
 
 !!! Task
-    Visit [Github](https://github.com/signup) and create and account. The website will guide you during the signup process. Choose an username that is unique and professional.
+    Visit [Github](https://github.com/signup) and create and account. The website will guide you during the signup process. Choose a username that is unique and professional.
 
 !!! question short
     Write your github username below.
@@ -152,4 +152,4 @@ During the workshop we will customize the provided example course. To better tak
     1. A powerpoint presentation
     2. A lab handout in Word
 
-!!! warning "We will provide example materials for those who do not bring their own."
+!!! warning "We will provide example materials for those who do not bring their own material."
