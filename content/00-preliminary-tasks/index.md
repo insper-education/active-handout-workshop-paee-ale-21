@@ -61,9 +61,11 @@ We will base our workshop in [Active Handout's Example Course](https://insper-ed
     !!! details
         The URL of your course will be `https://username.github.io/coursename`.
 
-A key concept in Github is **forking** a repository. When you **fork** a repository you create a relationship between the original (Example Course) and the newly created repository, which we refer to as *your fork*.
+A key concept in Github is **forking** a repository. When you **fork** a repository you create a relationship between the original (Example Course) and the newly created repository, which we refer to as *your fork*. This has many advantages:
 
-TODO: Thus, 
+1. Students can also create *forks* of the course where they save their homework and activities
+2. Whenever the original repository is updated, *your fork* can opt to incorporate the new changes. This can add new features to your course materials.
+3. History is preserved when *forking*, so your modifications will never be overwritten by updates. 
 
 !!! question choice
     When we refer to *your fork* it means:
@@ -82,7 +84,7 @@ TODO: Thus,
     By default, *your fork* will have the same name as the original (`active-handout-example-course`). 
 
 !!! task
-    Now let's rename our repository. Follow the instructions below. Use the name you chose in a previous question.
+    Now let's rename the newly created repository. Follow the instructions below. Use the name you chose in a previous question.
 
     !!! video
         ![Renaming a repository](gh-rename-repo.mp4)
