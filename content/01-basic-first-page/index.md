@@ -40,7 +40,7 @@ Inside the `content/` folder we find a `index.md` file. This file contains the h
 
 
 !!! task
-    Click on the *Edit this file* button (a small pen icon besides *Raw* and *Download*). Edit only the first part of the file to reflect a course of your liking. You should edit the begin of the file up to the **Course meetings** item.
+    Click on the *Edit this file* button (a small pen icon besides *Raw* and *Download* ![](pen.png)). Edit only the first part of the file to reflect a course of your liking. You should edit the begin of the file up to the **Course meetings** item.
 
     !!! video
         ![](editing.mp4)
