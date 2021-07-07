@@ -12,5 +12,4 @@ config:
       text: "Check"
   counter:
     - question
-    - tip
     - task
