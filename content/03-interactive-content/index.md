@@ -210,7 +210,7 @@ Recommended uses:
             Click after your teacher's explanation.
         ```
 
-### Under the hook (é isso mesmo?)
+### Under the hook 
 
 Some plugins used in the example are run automatic, you can configure it by editing the `content/config.yml` file, this plugins are:
 

@@ -230,6 +230,20 @@ Code blocks are started and ended by a line with three backticks.  See examples 
 !!! task
     Use the code block to include the arduino code on the active page.
 
+### Admonitions
+
+You can use extra features to improve the material, we suggest using Admonitions to highlight parts of the text or to warn the student of something. All follow the same syntax:
+
+```
+!!! type "Title"
+    Text ... .. 
+```
+
+Please access the [original doc](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) to see the supported types.
+
+!!! task
+    Add at least one admonition to the script.
+
 ## Further references
 
 Markdown is practical, but it has limitations and as we use it we will learn to work around.  For ideas see:
