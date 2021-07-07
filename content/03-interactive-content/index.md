@@ -38,7 +38,13 @@ To add a video to your lab use the fallowing syntax:
 
     !!! video
         ![](https://www.youtube.com/watch?v=nRDVm5rn_2A&feature=emb_title)
-        
+       
+Recommended uses:
+
+- Video of a short explanation of the activity, showing the expected results
+- Recap the theory or introduce something new
+- Bring external references to the discipline, current affairs, or curiosities
+    
 !!! info ""
     The extension accept local or youtube video. You can also use videos from elsewhere using the embed tool.
  
@@ -81,7 +87,13 @@ You can easily add a quiz using the fallowing syntax:
         !!! details
             Text explaining correct answer. Only shown after option is selected.
 
-An Quiz is formed by a text, a correct answer and a explanation for the student. ==The idea is not to assess the student, but to allow the student to self-assess==.
+An Quiz is formed by a text, a correct answer and a explanation for the student. ==The idea is not to assess the student, but to allow the student to self-assess==. 
+
+Recommended uses:
+
+- Memorization of simple concepts
+- Recalling definitions or technical terms used in previous sessions
+- Practising the application of simple formulas or algorithms in new data
     
 !!! info
     We are working on a extension that will report the result of all types of student input to a database, with the intention of enabling studies of the situation of the class. We will develop a tool that will give insights to the teacher about that active.
@@ -108,12 +120,15 @@ An Quiz is formed by a text, a correct answer and a explanation for the student.
                 Explaination ....
         ```
 
+!!! warning
+    We suggest that you check the generated site frequently to see if it is in accordance with what you want.
+
 ### Short Question
 
 !!! info ""
     Please access the [Short questions plugin page](https://insper-education.github.io/active-handout/reference/short-questions) for more information.
 
-This plugin adds one line text questions to a page. As with all plugins, it uses admonitions to indicate where the question should be placed. 
+This plugin adds one line text questions to a page. As with all plugins, it uses admonitions (`!!!`) to indicate where the question should be placed. 
 
 === "Markdown"
     ```
@@ -129,6 +144,13 @@ This plugin adds one line text questions to a page. As with all plugins, it uses
 
         !!! details
             Correct answer here. Take into account that students will phrase their answers differently and try to include elements that will let them evaluate their own answers.
+
+Recommended uses:
+
+- Writing a single line of code or command
+- Identifying/finding something in an diagram or code snippet. 
+
+Examples of these are "Where does X occur?" or "In what section Y is located?". In this case we do not want to direct the students' gaze into specific parts of the code/image/etc. Instead, students should look at the whole and identify where they are supposed to look for what's asked.
 
 !!! task
     Try to create a short question that asks about:
@@ -155,24 +177,51 @@ This plugin adds one line text questions to a page. As with all plugins, it uses
 
 ### Progress check
 
+!!! info ""
+    Please access the [Progress check plugin page](https://insper-education.github.io/active-handout/reference/progress-check/) for more information.
+
 This plugin adds Progress Check buttons to a page, a Progress Check button hides all content after it, including other progress buttons. 
 
-!!! tip "Recommended uses"
-    - To pace the activity
-    - Indicating that students have to check their answers with instructors or peers before proceeding
-    - Indicating that students won't be able to proceed unless a certain set of tasks and readings is completed
-
 !!! warning
-    The button will only work if the student has completed all previous questions asked, otherwise a notification will be generated.
+    The button will only work if the student has completed all previous questions asked, otherwise a notification will be generated. 
+
+```
+!!! progress
+    Button text goes here
+```
+
+!!! progress
+    Button text goes here
+    
+Recommended uses:
+
+- To pace the activity
+- Indicating that students have to check their answers with instructors or peers before proceeding
+- Indicating that students won't be able to proceed unless a certain set of tasks and readings is completed
 
 !!! task
     Put a progress button after the phrase:
     
-    > At this point, your teacher will give a brief demonstration of how the DC motor works.
+    > "At this point, your teacher will give a brief demonstration of how the DC motor works."
     
     ??? "Solution"
         ```
         !!! progress
             Click after your teacher's explanation.
         ```
+
+### Under the hook (é isso mesmo?)
+
+Some plugins used in the example are run automatic, you can configure it by editing the `content/config.yml` file, this plugins are:
+
+- Reload notification: To notify that the page has been changed and the student is looking at an outdated version
+- Notification plugin: Used by other plugins it generates on-screen notification
+- Counter: Task counter, automatically adds an ID for each task
+- CSS print: CSS for the print version of the active.
+
+### Result
+
+Take a look at the final result and compare it with word version, what do you think? Do you believe there is a gain in this format?
+
+We have been working on a version to be able to print the web page, there is still work to be done, but it works. Note that the video is converted to a QR code to be accessed from a cell phone.
 
