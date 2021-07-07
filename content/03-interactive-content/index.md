@@ -24,38 +24,78 @@ Now let's see some tools available for use and we'll use them to modify our prev
 
 To add a video to your lab use the fallowing syntax:
 
-```
-!!! video
-    ![Video title](video_src)
-```
+=== "markdown"
+    ```
+    !!! video
+        ![Video title](video_src)
+    ```
+    
+=== "result example"
+    ```
+    !!! video
+        ![](https://www.youtube.com/watch?v=nRDVm5rn_2A)
+    ```
 
-!!! info
-    Can be a local video or a youtube video, the tool the tool automatically detects and adapts.
+    !!! video
+        ![](https://www.youtube.com/watch?v=nRDVm5rn_2A&feature=emb_title)
+        
+!!! info ""
+    The extension accept local or youtube video. You can also use videos from elsewhere using the embed tool.
  
 !!! task
     Add a video to the begin of the lab, the video can be a brief review of the subject or some content that motivates/curiosities about the lab.
- 
+    
+    Example:
+    
+    ```
+    !!! video
+        ![](https://www.youtube.com/watch?v=nRDVm5rn_2A)
+    ```
+       
 ### Quiz
 
 !!! info ""
-    Please access the [Quiz plugin page](https://insper-education.github.io/active-handout/reference/quiz/) for more information 
+    Please access the [Quiz plugin page](https://insper-education.github.io/active-handout/reference/quiz/) for more information.
 
 You can easily add a quiz using the fallowing syntax:
 
 === "markdown"
-```
-!!! question choice
-    Text of the question. 
+    ```
+    !!! question choice
+        Text of the question. 
 
-    - [ ] option 1
-    - [ ] option 2
-    - [X] correct option
+        - [ ] option 1
+        - [ ] option 2
+        - [X] correct option
 
+        !!! details
+            Text explaining correct answer. Only shown after option is selected.
+    ```
+=== "Result"
+    !!! question choice
+        Text of the question. 
 
-    !!! details
-        Text explaining correct answer. Only shown after option is selected.
-```
+        - [ ] option 1
+        - [ ] option 2
+        - [X] correct option
+
+        !!! details
+            Text explaining correct answer. Only shown after option is selected.
+
+An Quiz is formed by a text, a correct answer and a explanation for the student. ==The idea is not to assess the student, but to allow the student to self-assess==.
     
-## Task 1 - 
+!!! info
+    We are working on a extension that will report the result to a database, with the intention of enabling studies of the situation of the class.
+    
+    With te report we will develop a tool that will give insights to the teacher about that active.
+    
+    For more information access:
+    
+    - https://github.com/insper-education/active-handout/pull/10
 
-## Task 2 - 
+!!! task
+    Create a quiz that asks the student:
+    
+    
+    
+    
