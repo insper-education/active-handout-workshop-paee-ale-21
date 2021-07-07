@@ -62,13 +62,13 @@ With our (rather empty) page created, we now need to add it to the outline. We'l
     Find the **nav** section and add the path to your recently created file. In our case we're using `labs/02-DcMotor/index.md`, but you should adapt it to the name of the folder created in the previous questions. 
 
     ```diff
-    nav:
-    - Home: index.md
-    - Classes:
-        - classes/01-ExampleClass/index.md
-    - Laboratories:
-        - labs/01-ExampleLab/index.md
-    +   - labs/02-DcMotor/index.md
+     nav:
+     - Home: index.md
+     - Classes:
+         - classes/01-ExampleClass/index.md
+     - Laboratories:
+         - labs/01-ExampleLab/index.md
+    +    - labs/02-DcMotor/index.md
     ```
 
     !!! video 
@@ -91,52 +91,110 @@ After the build and deploy process you should see the new page on the page of yo
 
 **Now we come to the most interesting part of the tutorial: creating the activity that will be shared with the students.** This section is based on our [fake Physics lab](DcMotorLab.zip), but any course materials can be used. Our main objective here is creating pretty formatted text, so we are not particularly interested in the contents. 
 
-
 !!! task
     If you are using our [fake lab](DcMotorLab.zip), download and extract it in your PC. If you are not, locate the files you want to use and keep them ready.
 
     Our fake lab contains 5 files, word document with the lab instruction and four images that were extracted from the document.
 
-The image below illustrates the type of document we'll be using. 
+The image below illustrates the type of document we'll be using, please open the document and analyses the used elements. 
 
 ![](dcMotorLab.png){width=400}
 
 We can identify the following elements in this lab:
 
-- Title
-- Sections 
+- Title/ sections/ paragraphs 
 - Theory (text explanations)
 - Lists
 - Equations
 - Figures
-- Questions 
 - Code
+- Questions 
 
 We will learn how to create these elements in Markdown. The end result will be similar to the Figure below. A live version is available at [Rafael's example materials](https://rafaelcorsi.github.io/active-handout-example-course/labs/02-DcMotor/). The sources can be [seen here](https://raw.githubusercontent.com/rafaelcorsi/active-handout-example-course/main/content/labs/02-DcMotor/index.md)
 
 ![](result.png)
 
+### Title, subsection, paragraphs
 
+To type text you can just write on the file. To separate paragraphs use a blank line. For titles, start a line with `#` and then follow with an empty line. For sections, start a line with `##` and then follow again with an empty line. The example below illustrates these features:
 
+```
+# this is a title
 
-!!! task
-    To type text you can just write on the file. To separate paragraphs use a blank line. For titles, start a line with `#` and then follow with an empty line. For sections, start a line with `##` and then follow again with an empty line. The example below illustrates these features:
+paragraph
 
-    ```
-    # this is a title
+## a section
 
-    paragraph
+another paragraph
 
-    ## a section
+### subsection
 
-    another paragraph
-    ```
-
-
-lista aqui
+...
+```
 
 !!! warning
+    You can use only one **head**(`#`) per document.
+
+!!! task
+    Using the word file as reference rewrite copy and past the text as paragraph and create the Head and sections, ==don't worry about the other elements (list, images, ...) they will be the next tasks.==
+    
+### Lists
+
+Lists in markdown can be made as follows:
+    
+``` md
+- first item
+- seccond item
+    - sub item (note that here we use 4 spaces)
+    - sub item
+```
+
+If you want a ordered list:
+
+```
+1. first item
+1. seccond item
+    1. sub item (note that here we use 4 spaces)
+    1. sub item
+```
+
+!!! task
+    Port the lesson learning objectives from word to the markdown file using list.
+    
+!!! warning
     We suggest that you check the generated site frequently to see if it is in accordance with what you want.
+
+### Equations
+
+Equations can be directly written using `LaTex` math notation. Write some formulas on your text and see the final result online.
+
+If you don't know `LaTex` notation, you can use the following to test this feature. Put it in a separate paragraph.
+
+```
+$$
+\sum_{i=1}N \frac{\Phi(x_i)^2}{i}
+$$
+```
+
+!!! task
+    Write the Lorentz force equation on the markdown file.
+    
+    ??? check "Solution"
+        ``` 
+        $$
+        \overrightarrow{F} = q . (\overrightarrow{E} + v \times B)
+        $$
+        ```
+    
+### Images
+
+Images are included using the following format:
+
+```
+![Description](filename.png)
+```
+
+`filename.png` is the name of the image and should match the name that you used in the *Upload* step.
 
 !!! tip "Uploading images"
     You need to upload the images to the lab folder before using. This can been done in github by going to the folder you want to upload to and then clicking *Add file* :arrow_right: *Upload* :ok:
@@ -145,27 +203,34 @@ lista aqui
         ![](uploadImgs.mp4)
 
 !!! task
-    Images are included using the following format:
+    Include the figures on the markdown file.
+    
+    ??? check "Solution"
+        ``` 
+        ![](fig1.png)
+        ![](fig2.png)
+        ![](fig3.png)
+        ```
+    
+### Code
 
-    ```
-    ![Description](filename.png)
-    ```
+Code blocks are started and ended by a line with three backticks.  See examples below.
 
-    `filename.png` is the name of the image and should match the name that you used in the *Upload* step.
+``` 
+    ```c
+    #include <stdio.h>
+
+    int main(void) {
+        printf("Hello world!\n");
+        return 0;
+    }
+    ```
+```
 
 !!! task
-    Equations can be directly written using `LaTex` math notation. Write some formulas on your text and see the final result online.
-
-    If you don't know `LaTex` notation, you can use the following to test this feature. Put it in a separate paragraph.
-
-    ```
-    $$
-    \sum_{i=1}N \frac{\Phi(x_i)^2}{i}
-    $$
-    ```
+    Use the code block to include the arduino code on the active page.
 
 ## Further references
-
 
 Markdown is practical, but it has limitations and as we use it we will learn to work around.  For ideas see:
 
