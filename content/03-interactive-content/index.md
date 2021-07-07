@@ -45,13 +45,12 @@ To add a video to your lab use the fallowing syntax:
 !!! task
     Add a video to the begin of the lab, the video can be a brief review of the subject or some content that motivates/curiosities about the lab.
     
-    Example:
-    
-    ```
-    !!! video
-        ![](https://www.youtube.com/watch?v=nRDVm5rn_2A)
-    ```
-       
+    ??? info "A possible solution"
+        ```
+        !!! video
+            ![](https://www.youtube.com/watch?v=nRDVm5rn_2A)
+        ```
+      
 ### Quiz
 
 !!! info ""
@@ -85,17 +84,95 @@ You can easily add a quiz using the fallowing syntax:
 An Quiz is formed by a text, a correct answer and a explanation for the student. ==The idea is not to assess the student, but to allow the student to self-assess==.
     
 !!! info
-    We are working on a extension that will report the result to a database, with the intention of enabling studies of the situation of the class.
-    
-    With te report we will develop a tool that will give insights to the teacher about that active.
+    We are working on a extension that will report the result of all types of student input to a database, with the intention of enabling studies of the situation of the class. We will develop a tool that will give insights to the teacher about that active.
     
     For more information access:
     
     - https://github.com/insper-education/active-handout/pull/10
 
 !!! task
-    Create a quiz that asks the student:
+    Try to create a quiz that asks about the torque, this is one of the questions that appear on the example lab:
     
+    ![](questions.png)
     
+    ??? info "A possible solution"
     
+        ```
+        !!! question choice
+            ![](fig2.png)    
+
+            - [x] There is torque in this position
+            - [ ] There is **no** torque in this position
+
+            !!! details
+                Explaination ....
+        ```
+
+### Short Question
+
+!!! info ""
+    Please access the [Short questions plugin page](https://insper-education.github.io/active-handout/reference/short-questions) for more information.
+
+This plugin adds one line text questions to a page. As with all plugins, it uses admonitions to indicate where the question should be placed. 
+
+=== "Markdown"
+    ```
+    !!! question short
+        Text of the question. 
+
+        !!! details
+            Correct answer here. Take into account that students will phrase their answers differently and try to include elements that will let them evaluate their own answers.
+    ```
+=== "Result"
+    !!! question short
+        Text of the question. 
+
+        !!! details
+            Correct answer here. Take into account that students will phrase their answers differently and try to include elements that will let them evaluate their own answers.
+
+!!! task
+    Try to create a short question that asks about:
     
+    1. Is the applied torque in the same direction as the angular speed of the motor?
+    1. In this position, what would it take to make the torque go in the direction of angular velocity?
+
+    Use one of the coil situation.
+
+    ??? info "A possible solution"
+    
+        ```
+        !!! question short
+            1. Is the applied torque in the same direction as the angular speed of the motor?
+            1. In this position, what would it take to make the torque go in the direction of angular velocity?
+    
+            ![](fig3.png)
+    
+            Answer below:
+            
+            !!! details
+                Explanation goes here...
+        ```
+
+### Progress check
+
+This plugin adds Progress Check buttons to a page, a Progress Check button hides all content after it, including other progress buttons. 
+
+!!! tip "Recommended uses"
+    - To pace the activity
+    - Indicating that students have to check their answers with instructors or peers before proceeding
+    - Indicating that students won't be able to proceed unless a certain set of tasks and readings is completed
+
+!!! warning
+    The button will only work if the student has completed all previous questions asked, otherwise a notification will be generated.
+
+!!! task
+    Put a progress button after the phrase:
+    
+    > At this point, your teacher will give a brief demonstration of how the DC motor works.
+    
+    ??? "Solution"
+        ```
+        !!! progress
+            Click after your teacher's explanation.
+        ```
+
