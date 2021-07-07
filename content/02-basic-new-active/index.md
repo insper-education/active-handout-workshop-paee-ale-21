@@ -164,9 +164,6 @@ lista aqui
     $$
     ```
 
-!!! task
-    Questions can be created using a especial notation called *Admonition*. It follows 
-
 ## Further references
 
 
