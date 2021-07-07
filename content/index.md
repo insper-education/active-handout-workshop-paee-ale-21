@@ -6,6 +6,7 @@ Welcome to "Creating and Publishing Active Learning Handouts" Workshop - PAEE/AL
     * Igor Montagner
     * Rafael Corsi Ferrão
     * Andrew Kurauchi
+* **Institution**: [Insper - Brazil](www.insper.edu.br/) 
 * **Date**: July 8th 11:30 - 13:00 (Europe/Lisbon GMT+1)
 * **Where?** Online at https://paeeale-2021.eventqualia.net/
 
