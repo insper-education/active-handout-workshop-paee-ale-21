@@ -81,5 +81,6 @@ While you wait you can:
 1. Edit the rest of the `index.md` file;
 1. Explore some of insper's disciplines that use this tool:
     - [3s The Elements of Computer System](https://insper.github.io/Z01.1/)
+    - [4s Web Technologies](https://toshikurauchi.github.io/tecweb/)
     - [5s Embedded Computer](https://insper.github.io/ComputacaoEmbarcada/)
     - [SoC and Embedded Linux](https://insper.github.io/Embarcados-Avancados/)
