@@ -21,7 +21,7 @@ In our experience, it helps to organize course material taking into account some
 
 - Separate `labs` and `classes` into different folders
 - Create a folder for each lab or class
-- Number each folder (`ie: 01-ExampleLab`). This makes it easir to refer to activities in text and slides.
+- Number each folder (`ie: 01-ExampleLab`). This makes it easier to refer to activities in text and slides.
 - Each folder holds:
     - `index.md`: A markdown file with the class material
     - Images, presentation and extra material for that specific activity
@@ -74,7 +74,7 @@ With our (rather empty) page created, we now need to add it to the outline. We'l
     !!! video 
         ![](mkdocs.mp4)
 
-After the build and deploy process you should see the new page on the page of your website:
+After the build and deploy process you should see the new page on your website:
 
 ![](dcMotorPage.png)
 
@@ -149,7 +149,7 @@ Lists in markdown can be made as follows:
     - sub item
 ```
 
-If you want a ordered list:
+If you want an ordered list:
 
 ```
 1. first item
@@ -214,7 +214,7 @@ Images are included using the following format:
     
 ### Code
 
-Code blocks are started and ended by a line with three backticks.  See examples below.
+Code blocks are started and ended by a line with three backticks. See examples below.
 
 ``` 
     ```c
