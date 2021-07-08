@@ -20,7 +20,7 @@ Now let's see some tools available for use and we'll use them to modify our prev
 ### Video
 
 !!! info ""
-    Please access the [Video plugin page](https://insper-education.github.io/active-handout/reference/quiz/) for more information 
+    Please access the [Video plugin page](https://insper-education.github.io/active-handout/reference/video/) for more information 
 
 To add a video to your lab use the fallowing syntax:
 
